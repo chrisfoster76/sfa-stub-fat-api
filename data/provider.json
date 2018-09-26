@@ -1,0 +1,33 @@
+{
+  "Ukprn": @ukprn,
+  "IsHigherEducationInstitute": false,
+  "Hei": false,
+  "ProviderName": "TEST-U-WELL CORPORATION @ukprn (Stub)",
+  "CurrentlyNotStartingNewApprentices": false,
+  "IsEmployerProvider": false,
+  "Uri": "https://findapprenticeshiptraining-api.sfa.bis.gov.uk/providers/@ukprn",
+  "Phone": "01273 890454",
+  "Email": "chrisfoster186+@ukprn@googlemail.com",
+  "NationalProvider": false,
+  "Website": "http://www.testuwell.org/",
+  "EmployerSatisfaction": 82,
+  "LearnerSatisfaction": 0,
+  "Addresses": [
+    {
+      "ContactType": "LEGAL",
+      "Street": "Ditchling Road",
+      "Town": "Lewes",
+      "PostCode": "BN7 3AE"
+    },
+    {
+      "ContactType": "PRIMARY",
+      "Street": "Ditchling Road",
+      "Town": "Lewes",
+      "PostCode": "BN7 3AE"
+    }
+  ],
+  "MarketingInfo": "Test-U-Well is awesome",
+  "HasParentCompanyGuarantee": false,
+  "IsNew" : false,
+  "IsLevyPayerOnly": false
+}
