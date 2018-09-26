@@ -18,6 +18,7 @@ app.get("/providers/:ukprn", (req, res) => handler(req,res));
       if (err) {
         return console.log(err);
       }
+      res.setHeader('Content-Type', 'application/json');
       res.status(201).send(data);
 
     });
