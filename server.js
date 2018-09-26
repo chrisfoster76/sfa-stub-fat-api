@@ -2,7 +2,7 @@ var express = require("express");
 var fs = require("fs");
 
 var app = express();
-var port = 80; //3300 for local dev?
+var port = process.env.PORT || 3300;
 
 //respond to all get requests
 app.get("/providers/:ukprn", (req, res) => handler(req,res));
