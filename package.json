@@ -1,8 +1,8 @@
 {
-  "name": "das-events",
+  "name": "sfa-stub-fat-api",
   "version": "1.0.0",
-  "description": "Mocked events api",
-  "main": "app.js",
+  "description": "Stubbed FAT Api",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.2",
+    "express": "^4.16.4",
     "http": "0.0.0",
     "https": "^1.0.0",
     "mongoose": "^5.0.4",

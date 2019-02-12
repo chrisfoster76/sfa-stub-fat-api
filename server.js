@@ -1,30 +1,37 @@
-var express = require("express");
-var fs = require("fs");
+const config = require('./config');
+const express = require("express");
+const http = require("http");
+const https = require("https");
+const bodyParser = require('body-parser');
+const fs = require('fs');
+const path = require('path');
 
-var app = express();
-var port = process.env.PORT || 3300;
+const port = process.env.PORT || config.port;
 
-//respond to all get requests
-app.get("/providers/:ukprn", (req, res) => handler(req,res));
+const app = express();
 
-  function handler(req, res) {
+app.get('*',(req, res) => {
+  sendFile(res, req.url, req.method);
+});
 
-    var ukprn = req.params["ukprn"];
-      
-    fs.readFile('data/provider.json', 'utf8', function (err,data) {
-
-      data = data.replace(/@ukprn/g, ukprn);
-
-      if (err) {
-        return console.log(err);
-      }
-      res.setHeader('Content-Type', 'application/json');
-      res.status(201).send(data);
-
-    });
-};
 
 app.listen(port, () => {
     console.log("Server listening on port " + port);
   });
- 
+
+
+sendFile = function(res, url, method) {
+
+    const filename = ("responses" + url.replace(/\/$/, '') + '_' + method + '.json').toLowerCase();
+
+    console.log("Processing request for " + path.join(__dirname, filename));
+
+    if(!fs.existsSync(filename))
+    {
+        res.status(404).send('No such file: ' + filename);
+        return;
+    }
+
+    res.header("Content-Type",'application/json');
+    res.sendFile(path.join(__dirname, filename));
+};
