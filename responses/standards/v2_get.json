@@ -1,34 +1,42 @@
 [
   {
     "Id": "1",
-    "Uri": "https://findapprenticeshiptraining-api.sfa.bis.gov.uk/standards/1",
-    "Title": "Taxidermy 101",
+    "Uri": "https://findapprenticeshiptraining-api.apprenticeships.education.gov.uk/standards/1",
+    "Title": "Network engineer",
     "TypicalLength": {
       "From": 24,
       "To": 24,
       "Unit": "m"
     },
     "Duration": 24,
-    "CurrentFundingCap": 18000,
-    "MaxFunding": 18000,
+    "CurrentFundingCap": 17000,
+    "MaxFunding": 17000,
     "Level": 4,
     "IsPublished": true,
     "Ssa1": 6,
     "Ssa2": 6.1,
-    "EffectiveFrom": "2018-12-01T00:00:00",
-    "IsActiveStandard": false,
+    "EffectiveFrom": "2014-08-01T00:00:00",
+    "IsActiveStandard": true,
     "StandardSectorCode": 7,
     "FundingPeriods": [
       {
-        "EffectiveFrom": "2018-12-01T00:00:00",
-        "EffectiveTo": "2018-12-31T00:00:00",
+        "EffectiveFrom": "2017-05-01T00:00:00",
+        "EffectiveTo": "2018-07-31T00:00:00",
         "FundingCap": 18000
       },
       {
-        "EffectiveFrom": "2019-01-01T00:00:00",
-        "FundingCap": 25000
+        "EffectiveFrom": "2018-08-01T00:00:00",
+        "EffectiveTo": "2019-03-03T00:00:00",
+        "FundingCap": 18000
+      },
+      {
+        "EffectiveFrom": "2019-03-04T00:00:00",
+        "FundingCap": 17000
       }
-    ]
+    ],
+    "RegulatedStandard": false,
+    "ProgrammeType": 1,
+    "ExtendedTitle": "Network engineer, Level 4 (Standard)"
   },
   {
     "Id": "10",
