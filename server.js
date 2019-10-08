@@ -12,11 +12,13 @@ const app = express();
 
 app.get('/ping',(req, res) => {
     res.status(204).send();
+    return;
 });
 
 
 app.get('*',(req, res) => {
   sendFile(res, req.url, req.method);
+  return;
 });
 
 
